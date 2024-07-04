@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+}
+.firstSection {
+    display: flex;
+    width:100%;
+    height:80px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(18,18,62);
+    
+    
+}
+.title {
+    animation-name: borderChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borderChange {
+    0%, 100% {
+        text-shadow: 
+            1px 1px 0px black,
+            -1px -1px 0px black,
+            1px -1px 0px black,
+            -1px 1px 0px black;
+    }
+    50% {
+        text-shadow: none;
+    }
+}
+.firstSection .title {
+    font-size: 43px;
+    
+}
+.firstSection .title span {
+    color: blueviolet;
+}
+
+.firstSection ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.08rem;
+    
+}
+.firstSection ul li a{
+    padding:5px;
+    margin:5px;
+    text-decoration: none;
+    color: white;
+
+}
+.firstSection ul li a:hover{
+    font-size: 1.15rem;
+    color: rgb(153,153,226);
+
+}
+.secondSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .secondSection .leftSection {
+            width: 40%;
+            font-size: 39px;
+        }
+
+        .secondSection #kishore, #element {
+            color: blueviolet;
+        }
+
+        .secondSection .leftSection .imp ul {
+            font-size: 30px;
+            display: flex;
+            list-style: none;
+            justify-content: flex-start;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .secondSection .leftSection .imp ul a {
+            display: inline-block;
+            padding: 3px 6px;
+            text-decoration: none;
+            color: white;
+            background-color: blueviolet;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .secondSection .leftSection .imp ul a:hover {
+            background-color: rgb(153, 102, 204);
+            transform: scale(1.05);
+        }
+
+        .social-media {
+            display: flex;
+            gap: 30px; /* Adjust the gap between social media icons */
+        }
+
+        .social-media img {
+            width: 45px; /* Set a fixed width for the social media icons */
+            height: 45px; /* Set a fixed height for the social media icons */
+        }
+
+        .secondSection .rightSection {
+            width: 40%;
+        }
+
+        .secondSection .rightSection img {
+            width: 80%; /* Adjust the width of the image as needed */
+        }
+        hr {
+            
+           margin:10px auto;
+            color: blueviolet;
+        }
+        
+
+        .thirdSection h1 {
+            text-align: center;
+            font-size: 39px;
+            margin-bottom: 20px;
+        }
+
+        .thirdSection .Education {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            
+            
+        }
+
+        .thirdSection .Education .btech, 
+        .thirdSection .Education .twe, 
+        .thirdSection .Education .tenth {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: rgb(18, 18, 62);
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            width: 93%;
+            box-sizing: border-box;
+            height: 250px; /* Set a fixed height */
+            color: white; /* Ensure text is visible on dark background */
+            overflow: auto;
+        }
+
+        .year, .school-name, .study, .cgpa{
+            margin: 5px 0;
+            word-wrap: break-word; /* Prevent overflow of long words */
+        }
+        .year,.study,.cgpa {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .cgpa {
+            margin-top: auto; /* Pushes the CGPA element to the bottom */
+        }
+        .school-name {
+            color:#ffbd39;
+            font-size: 28px;
+            width: 100%;
+            font-weight: 500;
+        }
+        .fourthSection h1 {
+            text-align: center;
+            font-size: 39px;
+            margin-bottom: 20px;
+        }
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .icon {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .icon img {
+            width: 60px;
+            height: 60px;
+
+        }
+        .icon p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: white;
+        }
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+@media  (max-width: 951px){
+    .firstSection {
+        display: flex;
+        width:100%;
+        height: 130px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .firstSection .title {
+        font-size: 39px;
+        
+    }
+    .firstSection ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1.08rem;
+        
+    }
+    .firstSection ul li {
+        margin-bottom: 10px;
+    }
+    .firstSection ul li a:hover{
+        font-size: 1.15rem;
+        color: rgb(153,153,226);
+    
+    }
+    .secondSection {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .secondSection .rightSection {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondSection .rightSection img {
+        
+        height: 16%;
+    }
+
+    .secondSection .leftSection{
+        width: 95%;
+        text-align: center;
+        font-size: 33px;
+
+    }
+    .secondSection .leftSection .imp ul {
+        justify-content: center; 
+    }
+
+    .secondSection .leftSection .social-media {
+       
+        justify-content: center; 
+    }
+    .social-media img {
+        width: 45px;
+        height:45px;
+    }
+    .thirdSection .Education {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+        
+    }
+    .thirdSection .Education .btech, 
+        .thirdSection .Education .twe, 
+        .thirdSection .Education .tenth {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: rgb(18, 18, 62);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+           
+            box-sizing: border-box;
+            height: 250px; /* Set a fixed height */
+            color: white; /* Ensure text is visible on dark background */
+        }
+        .school-name {
+            color:#ffbd39;
+            font-size: 26px;
+            width: 100%;
+            font-weight: 500;
+        }
+
+   
+    
+}
+
+
