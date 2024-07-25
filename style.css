@@ -21,11 +21,26 @@ body {
     
     
 }
+
 .title {
-    animation-name: borderChange;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    font-size: 2rem; /* Adjust as needed */
+    color: transparent; /* Ensure text color is transparent */
+    background: linear-gradient(to right, #ff4500, #ffa500, #32cd32, #00ced1, #1e90ff, #ff69b4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200% auto;
+    animation: textAnimation 5s linear infinite;
 }
+
+@keyframes textAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 
 @keyframes borderChange {
     0%, 100% {
@@ -92,31 +107,41 @@ body {
             margin-bottom: 10px;
         }
 
-        .secondSection .leftSection .imp ul a {
+        .secondSection .leftSection .imp .Resume a {
             display: inline-block;
             padding: 3px 6px;
             text-decoration: none;
             color: white;
             background-color: blueviolet;
             border-radius: 10px;
-            transition: background-color 0.3s, transform 0.3s;
+            transition: background-color 0.2s, transform 0.2s;
             margin-right: 20px;
             margin-bottom: 10px;
         }
 
-        .secondSection .leftSection .imp ul a:hover {
+        .secondSection .leftSection .imp .Resume a:hover {
             background-color: rgb(153, 102, 204);
             transform: scale(1.05);
         }
-
+        .social-media a img {
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .social-media a:hover img {
+            transform: scale(1.05);
+        }
+        
+        
         .social-media {
             display: flex;
-            gap: 30px; /* Adjust the gap between social media icons */
+            gap: 30px; 
+            /* Adjust the gap between social media icons */
         }
 
         .social-media img {
             width: 45px; /* Set a fixed width for the social media icons */
-            height: 45px; /* Set a fixed height for the social media icons */
+            height: 45px;
+             /* Set a fixed height for the social media icons */
         }
 
         .secondSection .rightSection {
@@ -211,6 +236,7 @@ body {
         .icon:hover {
             transform: scale(1.2);
         }
+        
 
 @media  (max-width: 951px){
     .firstSection {
