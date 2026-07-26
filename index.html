@@ -1,129 +1,378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>Kishore Reddy Developer Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Venkata Kishore Reddy Gongal Reddy — computer engineer, software developer, researcher, and community-focused technologist.">
+  <meta name="theme-color" content="#0c0f0d">
+  <meta property="og:title" content="Kishore Reddy — Computer Engineer">
+  <meta property="og:description" content="Building thoughtful systems across software, hardware, AI, and human-centered technology.">
+  <meta property="og:type" content="website">
+  <title>Kishore Reddy — Computer Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="firstSection">
-            <div class="title">Kishore's Portfolio</div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Work Experience</a></li>
-                <li><a href="#thirdSection">Education</a></li>
-                <li><a href="#fourthSection">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Kishore Reddy, home">
+        <span class="brand-mark" aria-hidden="true">KR</span>
+        <span class="brand-name">Kishore Reddy</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Computer engineering · Human-centered systems</p>
+        <h1 class="reveal">I build systems where <em>hardware, software,</em> and people meet.</h1>
+        <p class="hero-intro reveal">
+          I’m Kishore, an M.S. Computer Engineering student at Arizona State University. I turn complex ideas into useful products—from AI and embedded systems to accessible digital experiences.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="mailto:vgongalr@asu.edu">vgongalr@asu.edu</a>
         </div>
-    </header>
-    <main>
-        <section class="secondSection">
-            <div class="leftSection ">
-                Hi, My Name is<span id="kishore"> Kishore</span>
-                <div>I am a passionate</div>
-                <div><span id="element"></span></div>
-                <div class="imp">
-                    <ul class="Resume">
-                        <li><a href="https://github.com/gvkishorereddy">GitHub</a></li>
-                        <li><a href="">Resume</a></li>
-                    </ul>
-                    <ul class="social-media">
-                        <li><a href="https://www.linkedin.com/in/gv-kishore-reddy"><img src="linkedin.png" alt="Linkedin"></a></li>
-                        <li><a href="https://www.instagram.com/kishoreddy15/"><img src="instagram.png" alt="Instagram"></a></li>
-                        <li><a href="https://x.com/bharatindia101"><img src="twitter.png" alt="X"></a></li>
-                    </ul>
-                </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="A visual map of Kishore's multidisciplinary practice">
+        <div class="signal-card">
+          <div class="signal-topline">
+            <span>Current signal</span>
+            <span class="live-dot">Available to collaborate</span>
+          </div>
+          <div class="signal-core">
+            <span class="orbit orbit-one" aria-hidden="true"></span>
+            <span class="orbit orbit-two" aria-hidden="true"></span>
+            <div class="monogram" aria-hidden="true">K</div>
+            <span class="signal-label label-ai">AI / ML</span>
+            <span class="signal-label label-iot">IoT</span>
+            <span class="signal-label label-ux">UX</span>
+            <span class="signal-label label-cloud">Cloud</span>
+          </div>
+          <div class="signal-footer">
+            <div>
+              <span>Based in</span>
+              <strong>Tempe, Arizona</strong>
             </div>
-            <div class="rightSection">
-                <img src="dev.png" alt="developer">
+            <div>
+              <span>Studying</span>
+              <strong>Computer Engineering</strong>
             </div>
-        </section>
-        <hr>
-        <section class="thirdSection" id="thirdSection">
-            <h1>Education</h1>
-            <div class="Education">
-                <div class="btech">
-                    <div class="year">2020-2024</div> 
-                    <div class="study">Bachelor of Technology</div>
-                    <div class="school-name">Vel Tech University</div>
-                    <div class="cgpa"> CGPA : 9.7/10</div>
-                </div>
-                <div class="twe">
-                    <div class="year">2018-2019</div>
-                    <div class="study">Higher Secondary</div>
-                    <div class="school-name">Rajiv Gandhi University of Knowledge Technology</div>
-                    <div class="cgpa">CGPA: 8.79/10</div>
-                </div>
-                <div class="tenth">
-                    <div class="year">2017</div>
-                    <div class="study">Secondary</div>
-                    <div class="school-name">Mont Fort School (CBSE)</div>
-                    <div class="cgpa">CGPA : 10.0/10</div>
-                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proof-strip reveal" aria-label="Selected accomplishments">
+        <div class="proof-item">
+          <strong>10M+</strong>
+          <span>users served by enterprise software</span>
+        </div>
+        <div class="proof-item">
+          <strong>40%</strong>
+          <span>response latency improvement</span>
+        </div>
+        <div class="proof-item">
+          <strong>30+</strong>
+          <span>technical events organized</span>
+        </div>
+        <div class="proof-item">
+          <strong>3.97</strong>
+          <span>graduate GPA at ASU</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-work" id="work">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · Experience</p>
+          <h2>Engineering with context.</h2>
+          <p>I’m at my best on multidisciplinary teams—translating between technical constraints, stakeholder needs, and the people a product is meant to serve.</p>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience reveal">
+            <div class="experience-meta">
+              <span class="experience-number">01</span>
+              <time>Mar 2026 — Present</time>
             </div>
-        </section>
-        <hr>
-        <section class="fourthSection" id="fourthSection">
-            <h1>Skills</h1>
-            <div class="scrolling-container">
-                <div class="icon-container">
-                    <!-- Skill Icons Here -->
-                    <div class="icon">
-                        <img src="https://skillicons.dev/icons?i=html" alt="HTML">
-                        <p>HTML</p>
-                    </div>
-                    <div class="icon">
-                        <img src="https://skillicons.dev/icons?i=css" alt="CSS">
-                        <p>CSS</p>
-                    </div>
-                    <div class="icon">
-                        <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="icon">
-                        <img src="https://skillicons.dev/icons?i=java" alt="Java">
-                        <p>Java</p>
-                    </div>
-                    <div class="icon">
-                        <img src="https://skillicons.dev/icons?i=python" alt="Python">
-                        <p>Python</p>
-                    </div>
-                    <div class="icon">
-                        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL">
-                        <p>MySQL</p>
-                    </div>
-                    <div class="icon">
-                        <img src="https://skillicons.dev/icons?i=git" alt="Git">
-                        <p>Git</p>
-                    </div>
-                    <div class="icon">
-                        <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
-                        <p>GitHub</p>
-                    </div>
-                    <!-- Repeat the icons to ensure continuous scrolling -->
-                    <!-- Copy and paste the icons here for a seamless effect -->
-                </div>
+            <div class="experience-main">
+              <p class="company">Arizona State University</p>
+              <h3>Project Management Intern</h3>
+              <p>Developing digital solutions for university initiatives, including SmartDART, while connecting project strategy to hands-on implementation.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>React</li>
+                <li>Python</li>
+                <li>AWS Lambda</li>
+                <li>Airtable</li>
+              </ul>
             </div>
-        </section>
-        
-        <br>
-        <hr>
-    </main>
-    <script src="script.js"></script>
-    
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['<i>Web Developer</i>', '&amp; a Software Engineer'],
-          typeSpeed: 150,
-        });
-    </script>
+            <p class="experience-note">Interfaces, workflow automation, project tracking, and cross-functional delivery.</p>
+          </article>
+
+          <article class="experience reveal">
+            <div class="experience-meta">
+              <span class="experience-number">02</span>
+              <time>Jun — Jul 2026</time>
+            </div>
+            <div class="experience-main">
+              <p class="company">Arizona State University</p>
+              <h3>Game Design Summer Camp · Support Staff</h3>
+              <p>Mentored neurodivergent and neurotypical students as they built games, short films, and immersive worlds in an inclusive creative environment.</p>
+              <ul class="tag-list" aria-label="Technologies and practices used">
+                <li>Unreal Engine</li>
+                <li>Endstar</li>
+                <li>Worldbuilding</li>
+                <li>Mentorship</li>
+              </ul>
+            </div>
+            <p class="experience-note">Adapted technical instruction to different communication styles, sensory preferences, and learning needs.</p>
+          </article>
+
+          <article class="experience reveal">
+            <div class="experience-meta">
+              <span class="experience-number">03</span>
+              <time>Aug 2024 — Dec 2025</time>
+            </div>
+            <div class="experience-main">
+              <p class="company">Tata Consultancy Services</p>
+              <h3>Systems Engineer</h3>
+              <p>Built Flutter banking experiences at enterprise scale, integrating secure services and collaborating across product, backend, database, QA, and UI/UX teams.</p>
+              <ul class="tag-list" aria-label="Technologies and practices used">
+                <li>Flutter</li>
+                <li>REST APIs</li>
+                <li>Dart</li>
+                <li>Agile</li>
+              </ul>
+            </div>
+            <p class="experience-note"><strong>Star Performer of the Year.</strong> Helped reduce average response latency by more than 40%.</p>
+          </article>
+
+          <article class="experience reveal">
+            <div class="experience-meta">
+              <span class="experience-number">04</span>
+              <time>Jan — Apr 2024</time>
+            </div>
+            <div class="experience-main">
+              <p class="company">GLO LED Technologies</p>
+              <h3>Embedded Systems Intern</h3>
+              <p>Developed firmware for an IoT home-automation system and validated hardware interfaces from sensor input through reliable device communication.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>ESP8266</li>
+                <li>MQTT</li>
+                <li>I²C</li>
+                <li>UART</li>
+              </ul>
+            </div>
+            <p class="experience-note">Hardware bring-up, sensor integration, peripheral validation, and signal debugging.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-projects" id="projects">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 · Selected work</p>
+          <h2>From silicon to social impact.</h2>
+          <p>A selection of research and engineering projects that reflect how I work: measure carefully, prototype quickly, and design for real-world use.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project project-featured reveal">
+            <div class="project-index">A</div>
+            <div class="project-body">
+              <div class="project-kicker">Hardware acceleration · Edge AI</div>
+              <h3>GCN Accelerator for IIoT Edge Inference</h3>
+              <p>Designed a two-stage pipelined graph convolutional network accelerator in SystemVerilog and completed the RTL-to-GDSII flow on the ASAP7 28 nm PDK.</p>
+              <div class="metric-grid">
+                <div><strong>60</strong><span>clock cycles</span></div>
+                <div><strong>909.09</strong><span>MHz</span></div>
+                <div><strong>5.02</strong><span>mW total power</span></div>
+                <div><strong>0.1307</strong><span>mm² area</span></div>
+              </div>
+            </div>
+            <div class="project-tech">SystemVerilog · Cadence Innovus · FPGA · ASIC</div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-index">B</div>
+            <div class="project-body">
+              <div class="project-kicker">Research · Smart mobility</div>
+              <h3>Smart Signal System</h3>
+              <p>An IoT traffic-management system for density-aware control and emergency-vehicle priority, published through IEEE.</p>
+              <a class="text-link" href="https://ieeexplore.ieee.org/document/10828938" target="_blank" rel="noreferrer">
+                Read on IEEE Xplore <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div class="project-tech">IoT · Sensing · Traffic systems</div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-index">C</div>
+            <div class="project-body">
+              <div class="project-kicker">Benchmarking · Heterogeneous compute</div>
+              <h3>ML Across CPU, GPU &amp; FPGA</h3>
+              <p>Benchmarked CNN, human-activity recognition, and perceptron workloads to compare latency, throughput, and energy trade-offs for edge deployment.</p>
+            </div>
+            <div class="project-tech">Python · CUDA · SystemVerilog</div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-index">D</div>
+            <div class="project-body">
+              <div class="project-kicker">Embedded systems · Safety</div>
+              <h3>Autonomous Fire-Fighting Robot</h3>
+              <p>Integrated flame, smoke, and ultrasonic sensors with autonomous navigation for real-time indoor hazard detection and response.</p>
+            </div>
+            <div class="project-tech">Arduino · Embedded C · Sensors</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-about" id="about">
+      <div class="shell about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 · About</p>
+          <h2>Curiosity is the common thread.</h2>
+          <p>My work spans software, hardware, research, and education because the most interesting problems rarely belong to a single discipline.</p>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="about-lead">I care about technology that is rigorous under the hood and humane at the surface.</p>
+          <p>That has taken me from optimizing mobile systems used by millions, to building edge-AI hardware, to helping students find confidence through game design. I bring the same approach to each: listen closely, learn fast, and make the complex understandable.</p>
+
+          <div class="principles">
+            <div>
+              <span>01</span>
+              <h3>Engineer for reality</h3>
+              <p>Performance, reliability, and constraints are part of the design—not afterthoughts.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <h3>Make room for people</h3>
+              <p>Accessible, inclusive experiences begin with empathy and attentive collaboration.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <h3>Share the learning</h3>
+              <p>Knowledge compounds when teams, students, and communities can build on it together.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-panel reveal">
+          <div class="panel-label">Education</div>
+          <article>
+            <div>
+              <h3>Arizona State University</h3>
+              <p>M.S. Computer Engineering</p>
+            </div>
+            <div class="education-meta">
+              <span>2026 — 2027</span>
+              <strong>GPA 3.97 / 4.00</strong>
+            </div>
+          </article>
+          <article>
+            <div>
+              <h3>Vel Tech University</h3>
+              <p>B.Tech. Electronics &amp; Communication Engineering</p>
+            </div>
+            <div class="education-meta">
+              <span>2020 — 2024</span>
+              <strong>University Rank 1</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="community-panel reveal">
+          <div class="panel-label">Community</div>
+          <div class="community-grid">
+            <article>
+              <h3>IEEE SPS</h3>
+              <p>Technical Activity Chairman. Organized 30+ workshops and hands-on events.</p>
+            </article>
+            <article>
+              <h3>Student Voice</h3>
+              <p>Designed Qualtrics surveys and presented student-welfare findings to university leadership.</p>
+            </article>
+            <article>
+              <h3>Unnat Bharat Abhiyan</h3>
+              <p>Taught Mathematics and English and supported educational outreach in rural communities.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-toolkit" aria-labelledby="toolkit-title">
+      <div class="shell toolkit-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 · Toolkit</p>
+          <h2 id="toolkit-title">A broad stack, used with intent.</h2>
+        </div>
+        <div class="skill-groups reveal">
+          <div class="skill-group">
+            <h3>Software</h3>
+            <p>Python · JavaScript · Dart · Embedded C · React · Flutter · REST APIs</p>
+          </div>
+          <div class="skill-group">
+            <h3>Hardware &amp; AI</h3>
+            <p>SystemVerilog · FPGA · ASIC · Arduino · IoT · GCN · CNN · CUDA</p>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud &amp; Tools</h3>
+            <p>AWS Lambda · Airtable · Git · Cadence Innovus · Qualtrics · Unreal Engine</p>
+          </div>
+          <div class="skill-group">
+            <h3>Ways of working</h3>
+            <p>Rapid prototyping · UX design · Agile · Research · Mentorship · Stakeholder communication</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="shell contact-inner reveal">
+        <p class="eyebrow">05 · Contact</p>
+        <h2>Have a thoughtful problem to solve?</h2>
+        <p>I’m always interested in research, engineering, and product work that connects ambitious technology with meaningful human outcomes.</p>
+        <a class="contact-email" href="mailto:vgongalr@asu.edu">
+          <span>vgongalr@asu.edu</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <div class="contact-links">
+          <a href="https://github.com/gvkishorereddy" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/gv-kishore-reddy" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://ieeexplore.ieee.org/document/10828938" target="_blank" rel="noreferrer">IEEE Xplore <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p>Designed and built by Kishore Reddy.</p>
+      <p>© <span id="year">2026</span> · Tempe, Arizona</p>
+    </div>
+  </footer>
 </body>
 </html>
