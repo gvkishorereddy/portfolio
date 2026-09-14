@@ -175,13 +175,6 @@ h1, h2, h3, p { margin-top: 0; }
 .benchmark-row { max-width: 680px; margin-top: 28px; display: flex; align-items: center; gap: 13px; color: var(--lime); font: 10px ui-monospace, monospace; }
 .benchmark-row i { height: 1px; flex: 1; background: linear-gradient(90deg, var(--lime), rgba(201,244,91,.15)); }
 
-.approach-section { background: var(--paper-2); }
-.principle-grid { display: grid; grid-template-columns: repeat(4,1fr); border: 1px solid var(--line); }
-.principle-grid article { min-height: 285px; padding: 26px; display: flex; flex-direction: column; border-left: 1px solid var(--line); }
-.principle-grid article:first-child { border-left: 0; }
-.principle-grid span { color: var(--coral); font: italic 400 13px var(--serif); }
-.principle-grid h3 { margin: auto 0 10px; font-size: 21px; letter-spacing: -.03em; }
-.principle-grid p { margin: 0; color: var(--muted); font-size: 12px; }
 
 .toolkit-section { color: white; background: #1e2b26; }
 .toolkit-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 100px; }
@@ -241,9 +234,6 @@ footer p { margin: 0; }
   .project-card { grid-template-columns: 1fr; }
   .product-preview, .innet-flow { width: min(670px,100%); justify-self: center; }
   .compact-project { grid-template-columns: 1fr; }
-  .principle-grid { grid-template-columns: 1fr 1fr; }
-  .principle-grid article:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
-  .principle-grid article:nth-child(4) { border-top: 1px solid var(--line); }
   .toolkit-layout { grid-template-columns: 1fr; gap: 55px; }
 }
 
@@ -278,9 +268,6 @@ footer p { margin: 0; }
   .innet-flow { padding: 18px; grid-template-columns: 1fr; }
   .innet-flow > i { transform: rotate(90deg); justify-self: center; }
   .innet-flow aside { grid-column: 1; }
-  .principle-grid { grid-template-columns: 1fr; }
-  .principle-grid article { min-height: 230px; border-left: 0; border-top: 1px solid var(--line); }
-  .principle-grid article:first-child { border-top: 0; }
   .skill-list article { grid-template-columns: 1fr; gap: 8px; }
   .credentials-grid { grid-template-columns: 1fr; }
   .education-card, .achievement-card { padding: 25px; }
